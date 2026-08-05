@@ -2,6 +2,7 @@ services:
   - type: web
     name: socialflow-api
     env: node
+    plan: free
     buildCommand: npm install
     startCommand: npm start
     envVars:
@@ -22,3 +23,4 @@ databases:
   - name: socialflow-db
     databaseName: socialflow
     user: socialflow
+    plan: free
