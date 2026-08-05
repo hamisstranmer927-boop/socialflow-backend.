@@ -4,6 +4,7 @@
   "description": "SocialFlow API Server - Social Media Management Platform",
   "main": "src/app.js",
   "scripts": {
+    "prestart": "npm run migrate",
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
     "migrate": "npx sequelize-cli db:migrate",
